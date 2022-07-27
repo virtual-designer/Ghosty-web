@@ -1,1 +1,1 @@
-body .welcome{height:100vh}/*# sourceMappingURL=index.min.css.map */
+:root{--link_color: inherit;--background_color2: #0066ff;--background_color1: #002233;--text_color: white;--text_color_secondary: grey}body .welcome{height:100vh}.footer{background-color:var(--background_color1)}.footer-link{color:var(--link_color);text-decoration:none}.footer-link :hover{color:var(--background_color2);text-decoration:none;cursor:pointer}/*# sourceMappingURL=index.min.css.map */
