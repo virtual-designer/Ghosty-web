@@ -21,6 +21,9 @@ $common_transition_timing: 0.3s;
 .footer {
 	background-color: var(--background_color1);
 	width: 100vw;
+	position: fixed;
+	left: 0;
+	bottom: 0;
 }
 
 .footer-link {
