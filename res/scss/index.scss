@@ -13,6 +13,14 @@ body {
 	.welcome {
 		height: 100vh;
 	}
+
+	.title-text {
+		background: linear-gradient(rgb(60, 60, 197), rgb(204, 199, 244));
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-weight: bold;
+	}
 }
 
 $common_transition_timing: 0.3s;
