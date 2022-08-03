@@ -1,0 +1,57 @@
+body {
+	#orgProjects {
+		display: inline-block;
+	}
+
+	svg {
+		vertical-align: middle;
+	}
+
+	a {
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.box {
+		// border: 2px solid black;
+		border-radius: 5rem;
+		box-shadow: 3px 3px 8px rgb(0, 0, 0);
+		padding: 25px;
+		margin: 20px;
+		transition: 0.5s;
+
+		&:hover {
+			background-image: linear-gradient(rgb(132, 132, 159), rgb(204, 199, 244));
+		}
+	}
+
+	.stats span {
+		display: inline-block;
+		margin-right: 10px;
+	}
+
+	ol {
+		margin: 0px;
+		padding: 0px;
+		list-style-type: none;
+		column-count: 2;
+		height: auto;
+
+		li {
+			display: inline-block;
+			list-style: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		ol {
+			column-count: auto;
+		}
+	}
+}
