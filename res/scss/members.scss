@@ -9,3 +9,14 @@ body {
 		}
 	}
 }
+
+
+
+// For Mobile Screens
+@media only screen and (max-width: 768px) {
+	body {
+		.card {
+			margin-bottom: 2vh;
+		}
+	}
+}

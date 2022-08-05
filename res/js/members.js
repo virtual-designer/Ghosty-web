@@ -18,7 +18,10 @@ fetch('https://api.github.com/orgs/' + orgName + '/members')
 
 		for (var i = 1; i <= Object.keys(data).length; i++) {
 			var newDiv = document.createElement("div");
-			newDiv.classList.add("col-4");
+			newDiv.classList.add("col-lg-4");
+			newDiv.classList.add("col-sm-12");
+			newDiv.classList.add("col-md-6");
+
 			var devCard = document.getElementById('devCard');
 			var clonedDiv = devCard.cloneNode(true);
 			// Append the elems to the DOM
