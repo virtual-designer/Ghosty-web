@@ -1,7 +1,9 @@
 // Fetch GitHub Org public members list
 
+const orgName = "GhostyORG";
+
 // Fetch the data
-fetch('https://api.github.com/orgs/nodejs/members')
+fetch('https://api.github.com/orgs/' + orgName + '/members')
 	.then(res => res.json())
 	.then(data => {
 		// console.log(data);
@@ -14,8 +16,7 @@ fetch('https://api.github.com/orgs/nodejs/members')
 		devName.textContent = data[0]["login"];
 		devLink.href = data[0]["html_url"];
 
-
-		for (var i = 1; i <= 20; i++) {
+		for (var i = 1; i <= Object.keys(data).length; i++) {
 			var newDiv = document.createElement("div");
 			newDiv.classList.add("col-4");
 			var devCard = document.getElementById('devCard');
@@ -39,8 +40,6 @@ fetch('https://api.github.com/orgs/nodejs/members')
 			var newDevLink = document.getElementById('devLink' + i);
 			newDevLink.href = data[i]["html_url"];
 		}
-
-
 	})
 	.catch(err => console.error(err))
 
