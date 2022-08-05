@@ -1,5 +1,16 @@
 // Fetch GitHub Org public members list
-fetch('https://api.github.com/orgs/GhostyORG/members')
+
+var newDiv = document.createElement("div");
+newDiv.classList.add("col-4");
+var devCard = document.getElementById('devCard');
+var clonedDiv = devCard.cloneNode(true);
+// Append the elems to the DOM
+newDiv.appendChild(clonedDiv);
+document.getElementById('cardsHolder').appendChild(newDiv);
+
+
+// Fetch the data
+/* fetch('https://api.github.com/orgs/nodejs/members')
 	.then(res => res.json())
 	.then(data => {
 		console.log(data);
@@ -10,10 +21,21 @@ fetch('https://api.github.com/orgs/GhostyORG/members')
 
 
 
-		membersAvatar.src = data[0]["avatar_url"];
-		devName.textContent = data[0]["login"];
-		devLink1.href = data[0]["html_url"];
+
+		for (i = 0; i < 3; i++) {
+			membersAvatar.cloneNode()
+			membersAvatar.src = data[i]["avatar_url"];
+			devName.textContent = data[i]["login"];
+			devLink1.href = data[i]["html_url"];
+		}
+
 
 	})
-	.catch(err => console.error(err))
+	.catch(err => console.error(err)) */
+
+
+
+
+
+
 
