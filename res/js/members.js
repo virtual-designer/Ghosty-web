@@ -16,7 +16,7 @@ fetch('https://api.github.com/orgs/' + orgName + '/members')
 		devName.textContent = data[0]["login"];
 		devLink.href = data[0]["html_url"];
 
-		for (var i = 1; i <= Object.keys(data).length; i++) {
+		for (var i = 1; i <= (Object.keys(data).length - 1); i++) {
 			var newDiv = document.createElement("div");
 			newDiv.classList.add("col-lg-4");
 			newDiv.classList.add("col-sm-12");
