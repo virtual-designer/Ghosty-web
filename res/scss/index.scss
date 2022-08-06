@@ -28,10 +28,12 @@ $common_transition_timing: 0.3s;
 /* Custom style for the footer link and footer link hover effects */
 .footer {
 	background-color: var(--background_color1);
-	width: 100vw;
+	width: 100%;
 	position: fixed;
 	left: 0;
 	bottom: 0;
+	right: 0;
+	z-index: 1;
 }
 
 .footer-link {
