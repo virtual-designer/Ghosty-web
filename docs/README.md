@@ -6,7 +6,7 @@ The official web development repository for **Ghosty Organization** - A GitHub o
 
 ## Tech Used
 
-- Bootstrap
+- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 - Vanilla JS
 - [GitHub List Repositories](https://gitlist.himdek.com/)
 - SCSS
