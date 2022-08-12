@@ -17,3 +17,4 @@ The official web development repository for **Ghosty Organization** - A GitHub o
 - [Mushfiqur Rahman Abir](https://www.abir-tx.github.io)
 - [Killerclaws12](https://github.com/killerclaws12)
 - [Jacobkepford](https://github.com/jacobkepford)
+- [TyEggers](https://github.com/TyEggers)
