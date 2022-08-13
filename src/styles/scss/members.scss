@@ -1,0 +1,24 @@
+body {
+	.card {
+		width: 18rem;
+		transition: .5s;
+		margin-bottom: 3vh;
+
+		&:hover {
+			box-shadow: 12px 12px 30px;
+		}
+	}
+}
+
+
+
+// For Mobile Screens
+@media only screen and (max-width: 768px) {
+	body {
+		.card {
+			margin-bottom: 2vh;
+			width: 100%;
+			padding: 10px;
+		}
+	}
+}

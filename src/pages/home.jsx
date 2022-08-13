@@ -93,8 +93,8 @@ export default function Home() {
         crossorigin="anonymous"
       ></script>
 
-      <script src="./res/js/fetch.js"></script>
-      <script src="./res/js/index.js"></script>
+      <script src="../scripts/js/fetch.js"></script>
+      <script src="../scripts/js/index.js"></script>
     </div>
   );
 }
