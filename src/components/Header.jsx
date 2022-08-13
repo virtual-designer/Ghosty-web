@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -19,18 +20,18 @@ export default function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <a className="nav-link active" aria-current="page" href="#">
+              <NavLink className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
-              <a className="nav-link " href="./projects.html">
+              </NavLink>
+              <NavLink className="nav-link " to="/projects">
                 Projects
-              </a>
-              <a className="nav-link " href="./members.html">
+              </NavLink>
+              <NavLink className="nav-link " to="/members">
                 Members
-              </a>
-              <a className="nav-link" href="about.html">
+              </NavLink>
+              <NavLink className="nav-link" to="/about">
                 About
-              </a>
+              </NavLink>
               <a className="nav-link" href="https://discord.gg/ghostydev">
                 Discord
               </a>
