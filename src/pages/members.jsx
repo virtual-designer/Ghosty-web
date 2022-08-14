@@ -1,14 +1,18 @@
+// Imports
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { Helmet } from "react-helmet";
+// Custom Imports
 import { membersFetch } from "../scripts/js/members";
 import "../styles/css/custom/members.min.css";
 import config from "../config.json";
-import { Helmet } from "react-helmet";
 import pagesDesc from "../data/pageDesc.json";
-
 const TITLE = "Members | " + config.SITE_TITLE;
+
+// Driver Codes
 const DESC = pagesDesc.MembersDesc;
 const CANONICAL = config.SITE_DOMAIN + "/;";
+// Members Component
 export default function Members() {
   return (
     <div>

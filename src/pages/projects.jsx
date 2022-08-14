@@ -1,13 +1,17 @@
+// Imports
 import React from "react";
+import { Helmet } from "react-helmet";
+// Custom imports
 import { projectsFetch } from "../scripts/js/projects";
 import "../styles/css/custom/projects.min.css";
 import config from "../config.json";
-import { Helmet } from "react-helmet";
 import pagesDesc from "../data/pageDesc.json";
 
+// Driver Code
 const TITLE = "Projects | " + config.SITE_TITLE;
 const DESC = pagesDesc.ProjectsDesc;
 const CANONICAL = config.SITE_DOMAIN + "/;";
+// Projects Component
 export default function Projects() {
   return (
     <div>
