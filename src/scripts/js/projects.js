@@ -1,5 +1,5 @@
 import { Octokit } from "@octokit/rest";
-function projectsFetch() {
+export function projectsFetch() {
   const octokit = new Octokit();
 
   // Compare: https://docs.github.com/en/rest/reference/repos/#list-organization-repositories
@@ -30,5 +30,3 @@ function projectsFetch() {
       });
     });
 }
-
-export default projectsFetch;

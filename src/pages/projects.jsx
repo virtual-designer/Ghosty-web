@@ -1,5 +1,5 @@
 import React from "react";
-import projectsFetch from "../scripts/js/projects";
+import { projectsFetch } from "../scripts/js/projects";
 import "../styles/css/custom/projects.min.css";
 
 export default function Projects() {
