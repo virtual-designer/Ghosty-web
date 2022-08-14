@@ -1,6 +1,6 @@
 {
   "name": "ghosty-web-react",
-  "version": "0.1.0",
+  "version": "0.7.0",
   "private": true,
   "dependencies": {
     "@octokit/rest": "^19.0.3",
