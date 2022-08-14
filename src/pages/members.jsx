@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { membersFetch } from "../scripts/js/members";
 import "../styles/css/custom/members.min.css";
 
@@ -13,7 +14,7 @@ export default function Members() {
                 <div className="card" id="devCard">
                   <img
                     src="#"
-                    alt="Members Image"
+                    alt="Members"
                     id="members"
                     className="card-img-top"
                   />
@@ -22,9 +23,9 @@ export default function Members() {
                       Dev Name
                     </h5>
                     <div className="d-grid gap-2">
-                      <a href="#" className="btn btn-primary" id="devLink">
+                      <NavLink to="#" className="btn btn-primary" id="devLink">
                         GitHub
-                      </a>
+                      </NavLink>
                     </div>
                   </div>
                 </div>
