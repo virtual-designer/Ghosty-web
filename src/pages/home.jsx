@@ -1,7 +1,6 @@
 import React from "react";
 import logo from "../images/ghosty_logo.jpg";
 import { initHome } from "../scripts/js";
-import { releaseFetch } from "../scripts/js/fetch";
 
 export default function Home() {
   return (
