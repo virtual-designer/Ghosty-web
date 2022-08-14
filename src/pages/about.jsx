@@ -1,9 +1,20 @@
 import React from "react";
 import logo from "../images/ghosty_logo.jpg";
+import config from "../config.json";
+import { Helmet } from "react-helmet";
+import pagesDesc from "../data/pageDesc.json";
 
+const TITLE = "About | " + config.SITE_TITLE;
+const DESC = pagesDesc.AboutDesc;
+const CANONICAL = config.SITE_DOMAIN + "/;";
 export default function About() {
   return (
     <div>
+      <Helmet>
+        <title>{TITLE}</title>
+        <link rel="canonical" href={CANONICAL} />
+        <meta name="description" content={DESC} />
+      </Helmet>
       <div className="container-sm">
         <section>
           <div className="row my-5">

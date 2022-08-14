@@ -1,10 +1,21 @@
 import React from "react";
 import { projectsFetch } from "../scripts/js/projects";
 import "../styles/css/custom/projects.min.css";
+import config from "../config.json";
+import { Helmet } from "react-helmet";
+import pagesDesc from "../data/pageDesc.json";
 
+const TITLE = "Projects | " + config.SITE_TITLE;
+const DESC = pagesDesc.ProjectsDesc;
+const CANONICAL = config.SITE_DOMAIN + "/;";
 export default function Projects() {
   return (
     <div>
+      <Helmet>
+        <title>{TITLE}</title>
+        <link rel="canonical" href={CANONICAL} />
+        <meta name="description" content={DESC} />
+      </Helmet>
       <div className="container-sm">
         <section>
           <h1 className="h1 text-center">Our Projects</h1>

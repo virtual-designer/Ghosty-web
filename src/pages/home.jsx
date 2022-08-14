@@ -1,10 +1,21 @@
 import React from "react";
 import logo from "../images/ghosty_logo.jpg";
 import { initHome } from "../scripts/js";
+import config from "../config.json";
+import { Helmet } from "react-helmet";
+import pagesDesc from "../data/pageDesc.json";
 
+const TITLE = "Home | " + config.SITE_TITLE;
+const DESC = pagesDesc.HomeDesc;
+const CANONICAL = config.SITE_DOMAIN + "/;";
 export default function Home() {
   return (
     <div>
+      <Helmet>
+        <title>{TITLE}</title>
+        <link rel="canonical" href={CANONICAL} />
+        <meta name="description" content={DESC} />
+      </Helmet>
       <div className="container-sm">
         <section className="welcome">
           <div className="h-100 welcome-box">

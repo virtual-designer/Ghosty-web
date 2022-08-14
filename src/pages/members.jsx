@@ -2,10 +2,21 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { membersFetch } from "../scripts/js/members";
 import "../styles/css/custom/members.min.css";
+import config from "../config.json";
+import { Helmet } from "react-helmet";
+import pagesDesc from "../data/pageDesc.json";
 
+const TITLE = "Members | " + config.SITE_TITLE;
+const DESC = pagesDesc.MembersDesc;
+const CANONICAL = config.SITE_DOMAIN + "/;";
 export default function Members() {
   return (
     <div>
+      <Helmet>
+        <title>{TITLE}</title>
+        <link rel="canonical" href={CANONICAL} />
+        <meta name="description" content={DESC} />
+      </Helmet>
       <div className="container-sm">
         <section>
           <div className="container">
