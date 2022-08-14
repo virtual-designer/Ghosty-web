@@ -12,7 +12,6 @@ export default function Projects() {
         </section>
 
         {/* Custom JS */}
-        {/* {projectsFetch()} */}
       </div>
     </div>
   );
