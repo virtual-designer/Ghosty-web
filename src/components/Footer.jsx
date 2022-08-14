@@ -1,4 +1,6 @@
 import React from "react";
+import { releaseFetch } from "../scripts/js/fetch";
+import { NavLink } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -20,15 +22,18 @@ export default function Footer() {
             </div>
             <div className="col text-end">
               <code>
-                <a href="#" className="footer-link" id="version_footer">
+                <NavLink to="#" className="footer-link" id="version_footer">
                   v1.0.0
-                </a>
+                </NavLink>
               </code>
             </div>
           </div>
         </div>
       </section>
       {/* End of Footer section */}
+
+      {/* Scripts */}
+      {releaseFetch()}
     </div>
   );
 }
