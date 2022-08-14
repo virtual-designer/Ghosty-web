@@ -1,5 +1,6 @@
 import React from "react";
 import { membersFetch } from "../scripts/js/members";
+import "../styles/css/custom/members.min.css";
 
 export default function Members() {
   return (
