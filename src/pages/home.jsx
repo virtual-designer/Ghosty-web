@@ -1,13 +1,18 @@
+// Imports
 import React from "react";
+import { Helmet } from "react-helmet";
+// Custom Imports
 import logo from "../images/ghosty_logo.jpg";
 import { initHome } from "../scripts/js";
 import config from "../config.json";
-import { Helmet } from "react-helmet";
 import pagesDesc from "../data/pageDesc.json";
 
+// Driver Codes
 const TITLE = "Home | " + config.SITE_TITLE;
 const DESC = pagesDesc.HomeDesc;
 const CANONICAL = config.SITE_DOMAIN + "/;";
+
+// Home component
 export default function Home() {
   return (
     <div>

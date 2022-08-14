@@ -1,9 +1,12 @@
+// imports
 import React from "react";
+import { Helmet } from "react-helmet";
+// Custom imports
 import logo from "../images/ghosty_logo.jpg";
 import config from "../config.json";
-import { Helmet } from "react-helmet";
 import pagesDesc from "../data/pageDesc.json";
 
+// Driver codes
 const TITLE = "About | " + config.SITE_TITLE;
 const DESC = pagesDesc.AboutDesc;
 const CANONICAL = config.SITE_DOMAIN + "/;";
@@ -32,8 +35,6 @@ export default function About() {
           </div>
         </section>
       </div>
-
-      {/* Custom JS */}
     </div>
   );
 }
