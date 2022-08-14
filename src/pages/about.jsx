@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/ghosty_logo.jpg";
 
 export default function About() {
   return (
@@ -7,7 +8,7 @@ export default function About() {
         <section>
           <div className="row my-5">
             <div className="col-sm-12 col-md-6 col-lg-6 rounded mx-auto d-block">
-              <img src="res/images/ghosty_logo.jpg" alt="Ghosty Dev Logo" />
+              <img src={logo} alt="Ghosty Dev Logo" />
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 my-3">
               <h1 className="h1">About Us</h1>
