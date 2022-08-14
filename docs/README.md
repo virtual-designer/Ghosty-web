@@ -10,6 +10,7 @@ The official web development repository for **Ghosty Organization** - A GitHub o
 - Vanilla JS
 - ~~[GitHub List Repositories](https://gitlist.himdek.com/)~~
 - SCSS
+- OctoKit
 
 ## Contributers
 
