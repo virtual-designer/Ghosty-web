@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../images/ghosty_logo.jpg";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
               <div className="col order-1 order-lg-2 order-md-2">
                 <img
                   className="ghosty-logo rounded mx-auto d-block"
-                  src="res/images/ghosty_logo.jpg"
+                  src={logo}
                   alt="Ghosty Organization Logo"
                 />
               </div>
