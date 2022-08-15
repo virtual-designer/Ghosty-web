@@ -1,15 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/css/custom/header.min.css";
+import moonIcon from "../images/dark_mode.png";
 
 export default function Header() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg nav-container ">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/home">
-            Ghosty Dev
-          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -21,6 +19,10 @@ export default function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          <NavLink className="navbar-brand" to="/home">
+            Ghosty Dev
+          </NavLink>
+
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <NavLink
@@ -57,6 +59,10 @@ export default function Header() {
                 Discord
               </a>
             </div>
+          </div>
+
+          <div className="theme">
+            <img src={moonIcon} alt="Mode Switcher" />
           </div>
         </div>
       </nav>
