@@ -1,32 +1,95 @@
+// Imports
 import React from "react";
 import { releaseFetch } from "../scripts/js/fetch";
-import { NavLink } from "react-router-dom";
-
+import { NavLink, Link } from "react-router-dom";
+import "../styles/css/custom/footer.min.css";
+import discordLogo from "../images/Discord-Logo-White.png";
+import globeLogo from "../images/globe.png";
+// Functional Component
 export default function Footer() {
   return (
     <div>
       {/* Footer Section */}
-      <section className="footer">
-        <div className="card-footer">
-          <div className="row">
-            <div className="col">
-              <code>
-                <a
-                  className="footer-link"
-                  id="by_abir"
-                  href="https://github.com/abir-tx"
-                >
-                  © Abir | 2022
-                </a>
-              </code>
+      <section className="footer-container">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="footer-socials-container">
+              <h2>Socials</h2>
+              <ul>
+                <li>
+                  <a href="https://discord.gg/ghostydev">
+                    <img
+                      src={discordLogo}
+                      alt="Discord"
+                      className="discordLogo"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <NavLink to="/home">
+                    <img src={globeLogo} alt="Website" className="globeLogo" />
+                  </NavLink>
+                </li>
+              </ul>
             </div>
-            <div className="col text-end">
-              <code>
-                <NavLink to="#" className="footer-link" id="version_footer">
-                  v1.0.0
-                </NavLink>
-              </code>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="links-container">
+              <h2>Links</h2>
+              <ul>
+                <li>
+                  <NavLink
+                    className="nav-link"
+                    exact
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link"
+                    activeClassName="active"
+                    to="/projects"
+                  >
+                    Projects
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link"
+                    activeClassName="active"
+                    to="/members"
+                  >
+                    Members
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link"
+                    activeClassName="active"
+                    to="/about"
+                  >
+                    About
+                  </NavLink>
+                </li>
+              </ul>
             </div>
+          </div>
+        </div>
+        <div className="row bottom-footer-container">
+          <div className="col-sm-12 col-md-6 col-lg-6 credit-container">
+            <code className="credit">
+              With ♥ by{" "}
+              <a href="https://github.com/abir-Tx/" className="creator">
+                <b>Abir-Tx</b>
+              </a>
+            </code>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6 version-container">
+            <code className="version" id="version_footer"></code>
           </div>
         </div>
       </section>
