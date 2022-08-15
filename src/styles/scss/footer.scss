@@ -54,6 +54,11 @@
       text-align: start;
       .credit {
         margin-left: 40px;
+
+        .creator {
+          text-decoration: none;
+          color: var(--background_color2);
+        }
       }
       @media screen and (max-width: $medium) {
         text-align: center;

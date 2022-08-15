@@ -45,7 +45,12 @@ export default function Footer() {
         </div>
         <div className="row bottom-footer-container">
           <div className="col-sm-12 col-md-6 col-lg-6 credit-container">
-            <code className="credit">With ♥ by Abir-Tx</code>
+            <code className="credit">
+              With ♥ by{" "}
+              <a href="https://github.com/abir-Tx/" className="creator">
+                <b>Abir-Tx</b>
+              </a>
+            </code>
           </div>
           <div className="col-sm-12 col-md-6 col-lg-6 version-container">
             <code className="version" id="version_footer"></code>
