@@ -44,11 +44,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="row bottom-footer-container">
-          <div className="col-sm-12 col-md-6 col-lg-6">
+          <div className="col-sm-12 col-md-6 col-lg-6 credit-container">
             <code className="credit">With ♥ by Abir-Tx</code>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-6 text-end">
-            <code className="" id="version_footer"></code>
+          <div className="col-sm-12 col-md-6 col-lg-6 version-container">
+            <code className="version" id="version_footer"></code>
           </div>
         </div>
       </section>

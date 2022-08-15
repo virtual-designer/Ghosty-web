@@ -41,15 +41,35 @@
 
   .links-container {
     text-align: end;
+    @media screen and (max-width: $medium) {
+      text-align: center;
+    }
     ul {
       list-style-type: none;
     }
   }
 
   .bottom-footer-container {
-    .credit {
-      margin-left: 40px;
+    .credit-container {
+      text-align: start;
+      .credit {
+        margin-left: 40px;
+      }
+      @media screen and (max-width: $medium) {
+        text-align: center;
+      }
     }
+
+    .version-container {
+      text-align: end;
+      @media screen and (max-width: $medium) {
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: $medium) {
+    text-align: center;
   }
 }
 
