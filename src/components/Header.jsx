@@ -2,8 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/css/custom/header.min.css";
 import moonIcon from "../images/dark_mode.png";
+import sunIcon from "../images/light_mode.png";
 
 export default function Header() {
+  const [darkmode, setDarkode] = React.useState(false);
   return (
     <div>
       <nav className="navbar navbar-expand-lg nav-container ">
@@ -62,10 +64,16 @@ export default function Header() {
           </div>
 
           <div className="theme">
-            <img src={moonIcon} alt="Mode Switcher" />
+            {darkmode ? (
+              <img src={sunIcon} alt="Mode Switcher" onClick={toggleMode()} />
+            ) : (
+              <img src={moonIcon} alt="Mode Switcher" onClick={toggleMode()} />
+            )}
           </div>
         </div>
       </nav>
     </div>
   );
 }
+
+function toggleMode() {}
