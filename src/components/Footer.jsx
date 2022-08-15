@@ -37,8 +37,44 @@ export default function Footer() {
             <div className="links-container">
               <h2>Links</h2>
               <ul>
-                <li>Home</li>
-                <li>About</li>
+                <li>
+                  <NavLink
+                    className="nav-link"
+                    exact
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/"
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link"
+                    activeClassName="active"
+                    to="/projects"
+                  >
+                    Projects
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link"
+                    activeClassName="active"
+                    to="/members"
+                  >
+                    Members
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    className="nav-link"
+                    activeClassName="active"
+                    to="/about"
+                  >
+                    About
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>
