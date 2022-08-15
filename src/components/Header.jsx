@@ -1,12 +1,15 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../styles/css/custom/header.min.css";
 
 export default function Header() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg nav-container ">
         <div className="container-fluid">
-          {/* <a className="navbar-brand" href="#">Ghosty</a> */}
+          <NavLink className="navbar-brand" to="/home">
+            Ghosty Dev
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
