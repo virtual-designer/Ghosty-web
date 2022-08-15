@@ -5,7 +5,7 @@ import moonIcon from "../images/dark_mode.png";
 import sunIcon from "../images/light_mode.png";
 
 export default function Header() {
-  const [darkmode, setDarkode] = React.useState(false);
+  const [darkmode, setDarkmode] = React.useState(false);
   return (
     <div>
       <nav className="navbar navbar-expand-lg nav-container ">
@@ -65,9 +65,21 @@ export default function Header() {
 
           <div className="theme">
             {darkmode ? (
-              <img src={sunIcon} alt="Mode Switcher" onClick={toggleMode()} />
+              <img
+                src={sunIcon}
+                alt="Mode Switcher"
+                onClick={() => {
+                  setDarkmode(!darkmode);
+                }}
+              />
             ) : (
-              <img src={moonIcon} alt="Mode Switcher" onClick={toggleMode()} />
+              <img
+                src={moonIcon}
+                alt="Mode Switcher"
+                onClick={() => {
+                  setDarkmode(!darkmode);
+                }}
+              />
             )}
           </div>
         </div>
@@ -75,5 +87,3 @@ export default function Header() {
     </div>
   );
 }
-
-function toggleMode() {}
