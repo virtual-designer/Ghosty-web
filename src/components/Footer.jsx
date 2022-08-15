@@ -1,7 +1,7 @@
 // Imports
 import React from "react";
 import { releaseFetch } from "../scripts/js/fetch";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/css/custom/footer.min.css";
 import discordLogo from "../images/Discord-Logo-White.png";
 import globeLogo from "../images/globe.png";
