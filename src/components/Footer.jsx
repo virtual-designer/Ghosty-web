@@ -1,32 +1,54 @@
+// Imports
 import React from "react";
 import { releaseFetch } from "../scripts/js/fetch";
 import { NavLink } from "react-router-dom";
-
+import "../styles/css/custom/footer.min.css";
+import discordLogo from "../images/Discord-Logo-White.png";
+import globeLogo from "../images/globe.png";
+// Functional Component
 export default function Footer() {
   return (
     <div>
       {/* Footer Section */}
-      <section className="footer">
-        <div className="card-footer">
-          <div className="row">
-            <div className="col">
-              <code>
-                <a
-                  className="footer-link"
-                  id="by_abir"
-                  href="https://github.com/abir-tx"
-                >
-                  © Abir | 2022
-                </a>
-              </code>
+      <section className="footer-container">
+        <div className="row">
+          <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="footer-socials-container">
+              <h2>Socials</h2>
+              <ul>
+                <li>
+                  <NavLink to="#">
+                    <img
+                      src={discordLogo}
+                      alt="Discord"
+                      className="discordLogo"
+                    />
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="#">
+                    <img src={globeLogo} alt="Website" className="globeLogo" />
+                  </NavLink>
+                </li>
+              </ul>
             </div>
-            <div className="col text-end">
-              <code>
-                <NavLink to="#" className="footer-link" id="version_footer">
-                  v1.0.0
-                </NavLink>
-              </code>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6">
+            <div className="links-container">
+              <h2>Links</h2>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+              </ul>
             </div>
+          </div>
+        </div>
+        <div className="row bottom-footer-container">
+          <div className="col-sm-12 col-md-6 col-lg-6">
+            <code className="credit">With ♥ by Abir-Tx</code>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-6 text-end">
+            <code className="" id="version_footer"></code>
           </div>
         </div>
       </section>
