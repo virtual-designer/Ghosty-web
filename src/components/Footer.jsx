@@ -1,7 +1,7 @@
 // Imports
 import React from "react";
 import { releaseFetch } from "../scripts/js/fetch";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../styles/css/custom/footer.min.css";
 import discordLogo from "../images/Discord-Logo-White.png";
 import globeLogo from "../images/globe.png";
@@ -17,16 +17,16 @@ export default function Footer() {
               <h2>Socials</h2>
               <ul>
                 <li>
-                  <NavLink to="#">
+                  <a href="https://discord.gg/ghostydev">
                     <img
                       src={discordLogo}
                       alt="Discord"
                       className="discordLogo"
                     />
-                  </NavLink>
+                  </a>
                 </li>
                 <li>
-                  <NavLink to="#">
+                  <NavLink to="/home">
                     <img src={globeLogo} alt="Website" className="globeLogo" />
                   </NavLink>
                 </li>
