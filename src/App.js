@@ -13,6 +13,7 @@ import "bootstrap/dist/js/bootstrap";
 // Components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Error from "./pages/error";
 
 // main Functional Component which renders everything
 function App() {
@@ -22,9 +23,11 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/members" element={<Members />} />
           <Route path="/about" element={<About />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </Router>
