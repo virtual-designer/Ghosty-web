@@ -1,6 +1,38 @@
 // Custom CSS for the webpage
+/* SCSS Variables for the whole website */
 
-@import "./variables.scss";
+// Variables
+$common_transition_timing: 0.3s;
+// Screen sizes
+$small: 300px;
+$medium: 900px;
+
+// CSS Variables
+:root {
+  --black: black;
+  --link_color: inherit;
+  --blue: #0066ff;
+  --light-blue: rgb(204, 199, 244);
+  --header: white;
+  --footer: grey;
+  --text_color: black;
+  --shadow: black;
+}
+
+.darkmode {
+  color: white;
+  --header: black;
+  --footer: black;
+  --text_color: white;
+  background-color: rgb(0, 0, 0);
+  --shadow: rgb(139, 139, 149);
+}
+
+// ----------------------------------------- Styles -------------------------------
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   .welcome {
@@ -8,15 +40,16 @@ body {
   }
 
   .title-text {
-    background: linear-gradient(rgb(60, 60, 197), rgb(204, 199, 244));
+    background: linear-gradient(
+      var(--blue, blue),
+      var(--light-blue, rgb(204, 199, 244))
+    );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
   }
 }
-
-$common_transition_timing: 0.3s;
 
 // Mobile Devices
 @media only screen and (max-width: 768px) {
@@ -33,7 +66,7 @@ $common_transition_timing: 0.3s;
         text-align: center;
         letter-spacing: 1vw;
         font-weight: bold;
-        text-shadow: 4px 4px 8px black;
+        text-shadow: 4px 4px 8px var(--black, black);
       }
     }
   }

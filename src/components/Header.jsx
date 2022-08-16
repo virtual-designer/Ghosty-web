@@ -11,10 +11,13 @@ export default function Header() {
     console.log("Darkmode is enabled now");
     document.getElementById("navbar").classList.add("navbar-dark");
     document.body.classList.add("darkmode");
-  } else {
+  }
+  if (!darkmode) {
     console.log("Light Mode is enabled now");
-    document.getElementById("navbar").classList.remove("navbar-dark");
-    document.body.classList.remove("darkmode");
+    if (document.body.classList.contains("darkmode")) {
+      document.getElementById("navbar").classList.remove("navbar-dark");
+      document.body.classList.remove("darkmode");
+    }
   }
   return (
     <div>

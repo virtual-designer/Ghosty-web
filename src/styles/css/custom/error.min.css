@@ -1,1 +1,1 @@
-.error-container{transform:translateY(35vh);background-color:#000;padding:30px;color:red}.error-container h1{text-shadow:3px 3px 5px blue}/*# sourceMappingURL=error.min.css.map */
+.error-container{transform:translateY(35vh);background-color:var(--black);padding:30px;color:red}.error-container h1{text-shadow:3px 3px 5px blue}/*# sourceMappingURL=error.min.css.map */

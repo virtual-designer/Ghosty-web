@@ -2,7 +2,7 @@
 
 /* Custom style for the footer link and footer link hover effects */
 .footer-container {
-  background-color: var(--background_color1);
+  background-color: var(--footer, grey);
   width: 100%;
   position: inherit;
   bottom: 0;
@@ -57,7 +57,7 @@
 
         .creator {
           text-decoration: none;
-          color: var(--background_color2);
+          color: var(--blue, blue);
         }
       }
       @media screen and (max-width: $medium) {

@@ -1,1 +1,1 @@
-body .card{width:18rem;transition:.5s;margin-bottom:3vh}body .card:hover{box-shadow:12px 12px 30px}@media only screen and (max-width: 768px){body .card{margin-bottom:2vh;width:100%;padding:10px}}/*# sourceMappingURL=members.min.css.map */
+body .card{width:18rem;transition:.5s;margin-bottom:3vh}body .card:hover{box-shadow:12px 12px 30px var(--shadow)}@media only screen and (max-width: 768px){body .card{margin-bottom:2vh;width:100%;padding:10px}}/*# sourceMappingURL=members.min.css.map */
