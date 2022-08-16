@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import logo from "../images/ghosty_logo.jpg";
 import config from "../config.json";
 import pagesDesc from "../data/pageDesc.json";
+import "../styles/css/custom/about.min.css";
 
 // Driver codes
 const TITLE = "About | " + config.SITE_TITLE;
@@ -21,16 +22,18 @@ export default function About() {
       <div className="container-sm">
         <section>
           <div className="row my-5">
-            <div className="col-sm-12 col-md-6 col-lg-6 rounded mx-auto d-block">
+            <div className="col-sm-12 col-md-6 col-lg-6 rounded mx-auto d-block ghosty-container">
               <img src={logo} alt="Ghosty Dev Logo" />
             </div>
             <div className="col-sm-12 col-md-6 col-lg-6 my-3">
-              <h1 className="h1">About Us</h1>
-              Welcome to Ghosty Development! We make high quality projects for
-              the community to use and learn from. We make stuff from apps, to
-              websites, to even bots! We have a team of 4 constantly working to
-              improve the projects. We hope you learn something from our
-              projects, and star them!
+              <h1 className="h1 titleText">About Us</h1>
+              <p className="aboutText">
+                Welcome to Ghosty Development! We make high quality projects for
+                the community to use and learn from. We make stuff from apps, to
+                websites, to even bots! We have a team of 4 constantly working
+                to improve the projects. We hope you learn something from our
+                projects, and star them!
+              </p>
             </div>
           </div>
         </section>
