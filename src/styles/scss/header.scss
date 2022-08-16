@@ -31,11 +31,11 @@ Date: 8/15/2022
       border-radius: 20px;
     }
   }
-}
 
-.active {
-  box-shadow: inset 100px 0 0 0 var(--blue);
-  border-radius: 20px;
+  .active {
+    box-shadow: inset 100px 0 0 0 var(--blue);
+    border-radius: 20px;
+  }
 }
 
 .brandName {

@@ -41,7 +41,6 @@ export default function Footer() {
                   <NavLink
                     className="nav-link"
                     exact
-                    activeClassName="active"
                     aria-current="page"
                     to="/"
                   >
@@ -49,29 +48,17 @@ export default function Footer() {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    className="nav-link"
-                    activeClassName="active"
-                    to="/projects"
-                  >
+                  <NavLink className="nav-link" to="/projects">
                     Projects
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    className="nav-link"
-                    activeClassName="active"
-                    to="/members"
-                  >
+                  <NavLink className="nav-link" to="/members">
                     Members
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink
-                    className="nav-link"
-                    activeClassName="active"
-                    to="/about"
-                  >
+                  <NavLink className="nav-link" to="/about">
                     About
                   </NavLink>
                 </li>
