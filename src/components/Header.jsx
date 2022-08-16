@@ -10,8 +10,11 @@ export default function Header() {
   if (darkmode) {
     console.log("Darkmode is enabled now");
     document.getElementById("navbar").classList.add("navbar-dark");
+    document.body.classList.add("darkmode");
   } else {
     console.log("Light Mode is enabled now");
+    document.getElementById("navbar").classList.remove("navbar-dark");
+    document.body.classList.remove("darkmode");
   }
   return (
     <div>
