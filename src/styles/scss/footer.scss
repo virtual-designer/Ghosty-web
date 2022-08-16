@@ -2,11 +2,15 @@
 
 /* Custom style for the footer link and footer link hover effects */
 .footer-container {
-  background-color: var(--footer, grey);
+  background-color: var(--footer, white);
   width: 100%;
   position: inherit;
   bottom: 0;
   color: var(--text_color);
+
+  // making it a bit round
+  box-shadow: 2px 2px 20px var(--shadow);
+  border-radius: 10px;
 
   //   display: flex;
   //   flex-direction: column;

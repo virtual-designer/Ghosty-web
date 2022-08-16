@@ -3,6 +3,7 @@ SCSS styleshet for Header.jsx component
 By: Mushfiqur Rahman Abir
 Date: 8/15/2022 
 */
+@import "variables.scss";
 
 .nav-container {
   background-color: var(--header, white);
