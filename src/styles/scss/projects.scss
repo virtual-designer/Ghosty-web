@@ -3,12 +3,21 @@
 body {
   #orgProjects {
     a {
+      font-size: 1.5rem;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s ease-out;
+      text-decoration: underline;
     }
 
     a:hover {
       text-decoration: underline;
+      -webkit-text-decoration-color: salmon;
+      text-decoration-color: salmon;
+      -webkit-text-decoration-style: wavy;
+      text-decoration-style: wavy;
+
+      letter-spacing: 0.5rem;
     }
 
     ul {
@@ -37,7 +46,7 @@ body {
         border: none;
         border-radius: 10px;
         transition: 0.2s ease-in;
-
+        font-size: medium;
         &:hover {
           background-color: var(--card-hover, rgb(223, 223, 223));
           box-shadow: 3px 3px 10px var(--shadow);
