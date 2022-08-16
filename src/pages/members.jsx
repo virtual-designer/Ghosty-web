@@ -38,7 +38,11 @@ export default function Members() {
                       Dev Name
                     </h5>
                     <div className="d-grid gap-2">
-                      <NavLink to="#" className="btn btn-primary" id="devLink">
+                      <NavLink
+                        to="#"
+                        className="btn btn-primary github-btn"
+                        id="devLink"
+                      >
                         GitHub
                       </NavLink>
                     </div>

@@ -2,14 +2,33 @@
 
 body {
   .card {
+    margin-top: 3vh;
     width: 18rem;
     transition: 0.5s;
-    margin-bottom: 3vh;
     background-color: var(--card, white);
 
     &:hover {
       box-shadow: 12px 12px 30px var(--shadow);
       background-color: var(--card-hover, white);
+    }
+  }
+  .github-btn {
+    transition: 0.3s ease-in;
+    font-weight: bold;
+    &:hover {
+      letter-spacing: 0.5rem;
+      animation-name: githubBtn;
+      animation-duration: 0.3s;
+      animation-direction: alternate-reverse;
+      animation-iteration-count: infinite;
+      @keyframes githubBtn {
+        from {
+          background-color: blue;
+        }
+        to {
+          background-color: rgb(26, 0, 153);
+        }
+      }
     }
   }
 }
