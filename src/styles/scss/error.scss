@@ -1,6 +1,8 @@
+@import "variables.scss";
+
 .error-container {
   transform: translateY(35vh);
-  background-color: black;
+  background-color: var(--black);
   padding: 30px;
   color: red;
   h1 {

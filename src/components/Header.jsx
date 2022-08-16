@@ -1,12 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../styles/css/custom/header.min.css";
+import moonIcon from "../images/dark_mode.png";
+import sunIcon from "../images/light_mode.png";
 
 export default function Header() {
+  const [darkmode, setDarkmode] = React.useState(false);
+
+  if (darkmode) {
+    console.log("Darkmode is enabled now");
+    document.getElementById("navbar").classList.add("navbar-dark");
+    document.body.classList.add("darkmode");
+  }
+  if (!darkmode) {
+    console.log("Light Mode is enabled now");
+    if (document.body.classList.contains("darkmode")) {
+      document.getElementById("navbar").classList.remove("navbar-dark");
+      document.body.classList.remove("darkmode");
+    }
+  }
   return (
     <div>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg nav-container " id="navbar">
         <div className="container-fluid">
-          {/* <a className="navbar-brand" href="#">Ghosty</a> */}
           <button
             className="navbar-toggler"
             type="button"
@@ -18,6 +34,10 @@ export default function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          <NavLink className="navbar-brand" to="/home">
+            Ghosty Dev
+          </NavLink>
+
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <NavLink
@@ -54,6 +74,26 @@ export default function Header() {
                 Discord
               </a>
             </div>
+          </div>
+
+          <div className="theme">
+            {darkmode ? (
+              <img
+                src={sunIcon}
+                alt="Mode Switcher"
+                onClick={() => {
+                  setDarkmode(!darkmode);
+                }}
+              />
+            ) : (
+              <img
+                src={moonIcon}
+                alt="Mode Switcher"
+                onClick={() => {
+                  setDarkmode(!darkmode);
+                }}
+              />
+            )}
           </div>
         </div>
       </nav>

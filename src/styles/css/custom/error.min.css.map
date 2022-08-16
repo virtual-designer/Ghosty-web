@@ -1,1 +1,1 @@
-{"version":3,"sources":["../../scss/error.scss"],"names":[],"mappings":"AAAA,iBACE,0BAAA,CACA,qBAAA,CACA,YAAA,CACA,SAAA,CACA,oBACE,4BAAA","file":"error.min.css"}
+{"version":3,"sources":["../../scss/variables.scss","../../scss/error.scss"],"names":[],"mappings":"AAUA,MACE,cAAA,CACA,qBAAA,CACA,eAAA,CACA,gCAAA,CACA,eAAA,CACA,mCAAA,CAEA,eAAA,CACA,0BAAA,CACA,cAAA,CClBF,iBACE,0BAAA,CACA,6BAAA,CACA,YAAA,CACA,SAAA,CACA,oBACE,4BAAA","file":"error.min.css"}

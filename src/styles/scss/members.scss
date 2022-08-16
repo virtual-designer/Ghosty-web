@@ -1,24 +1,26 @@
+@import "variables.scss";
+
 body {
-	.card {
-		width: 18rem;
-		transition: .5s;
-		margin-bottom: 3vh;
+  .card {
+    width: 18rem;
+    transition: 0.5s;
+    margin-bottom: 3vh;
+    background-color: var(--card, white);
 
-		&:hover {
-			box-shadow: 12px 12px 30px;
-		}
-	}
+    &:hover {
+      box-shadow: 12px 12px 30px var(--shadow);
+      background-color: var(--card-hover, white);
+    }
+  }
 }
-
-
 
 // For Mobile Screens
 @media only screen and (max-width: 768px) {
-	body {
-		.card {
-			margin-bottom: 2vh;
-			width: 100%;
-			padding: 10px;
-		}
-	}
+  body {
+    .card {
+      margin-bottom: 2vh;
+      width: 100%;
+      padding: 10px;
+    }
+  }
 }
