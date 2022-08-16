@@ -41,38 +41,22 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <NavLink
-                className="nav-link"
+                className="nav-link tab-links"
                 exact
-                activeClassName="active"
                 aria-current="page"
                 to="/"
               >
                 Home
               </NavLink>
-              <NavLink
-                className="nav-link"
-                activeClassName="active"
-                to="/projects"
-              >
+              <NavLink className="nav-link tab-links" to="/projects">
                 Projects
               </NavLink>
-              <NavLink
-                className="nav-link"
-                activeClassName="active"
-                to="/members"
-              >
+              <NavLink className="nav-link tab-links" to="/members">
                 Members
               </NavLink>
-              <NavLink
-                className="nav-link"
-                activeClassName="active"
-                to="/about"
-              >
+              <NavLink className="nav-link tab-links" to="/about">
                 About
               </NavLink>
-              <a className="nav-link" href="https://discord.gg/ghostydev">
-                Discord
-              </a>
             </div>
           </div>
 
