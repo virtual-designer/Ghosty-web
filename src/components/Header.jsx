@@ -6,9 +6,16 @@ import sunIcon from "../images/light_mode.png";
 
 export default function Header() {
   const [darkmode, setDarkmode] = React.useState(false);
+
+  if (darkmode) {
+    console.log("Darkmode is enabled now");
+    document.getElementById("navbar").classList.add("navbar-dark");
+  } else {
+    console.log("Light Mode is enabled now");
+  }
   return (
     <div>
-      <nav className="navbar navbar-expand-lg nav-container ">
+      <nav className="navbar navbar-expand-lg nav-container " id="navbar">
         <div className="container-fluid">
           <button
             className="navbar-toggler"
