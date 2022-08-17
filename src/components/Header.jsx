@@ -34,9 +34,9 @@ export default function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <NavLink className="navbar-brand brandName" to="/">
+          <a className="navbar-brand brandName" href="/">
             Ghosty Dev
-          </NavLink>
+          </a>
 
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
