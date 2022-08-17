@@ -3,7 +3,7 @@ import React from "react";
 import { releaseFetch } from "../scripts/js/fetch";
 import { NavLink } from "react-router-dom";
 import "../styles/css/custom/footer.min.css";
-import discordLogo from "../images/Discord-Logo-White.png";
+import discordLogo from "../images/discord-blue.png";
 import globeLogo from "../images/globe.png";
 // Functional Component
 export default function Footer() {
