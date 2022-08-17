@@ -1,6 +1,7 @@
 # Ghosty Web
 
-![Web capture_6-8-2022_24752_ghostydevs vercel app-By-Mushfiqur-Rahman-Abir](https://user-images.githubusercontent.com/28858998/183160458-395fa0e6-50ac-4b71-b98f-4eb494208eaf.jpeg)
+
+![Web capture_16-8-2022_224943_localhost-By-Mushfiqur-Rahman-Abir](https://user-images.githubusercontent.com/28858998/184935199-6c663c08-7e64-48bb-b5f4-a6043e2f8552.jpeg)
 
 The official web development repository for **Ghosty Organization** - A GitHub organization of developers to build bots, apps & other cool stuffs. The website is built using **ReactJS** and is hosted on https://ghostydevs.vercel.app
 
