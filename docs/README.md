@@ -16,7 +16,10 @@ The official web development repository for **Ghosty Organization** - A GitHub o
 
 ## Development
 
-Use `npm start` command to start the development server of this project
+```shell
+$ git clone https://github.com/GhostyORG/Ghosty-Web.git && cd Nexus
+$ yarn or npm install
+```
 
 ## Contributers
 
