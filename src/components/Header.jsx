@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "../styles/css/custom/header.min.css";
 import moonIcon from "../images/dark_mode.png";
 import sunIcon from "../images/light_mode.png";
+import { useEffect } from "react";
 
 export default function Header() {
   const [darkmode, setDarkmode] = React.useState(false);
@@ -19,6 +20,13 @@ export default function Header() {
       document.body.classList.remove("darkmode");
     }
   }
+
+  // Automatic switch mode based on OS theme
+  useEffect(() => {
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? setDarkmode(true)
+      : setDarkmode(false);
+  }, []);
   return (
     <div>
       <nav className="navbar navbar-expand-lg nav-container " id="navbar">
