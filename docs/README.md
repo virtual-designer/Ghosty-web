@@ -17,7 +17,7 @@ The official web development repository for **Ghosty Organization** - A GitHub o
 ## Development
 
 ```shell
-$ git clone https://github.com/GhostyORG/Ghosty-Web.git && cd Ghosty-Web
+$ git clone https://github.com/GhostyORG/Ghosty-web.git && cd Ghosty-web
 $ yarn or npm install
 ```
 
