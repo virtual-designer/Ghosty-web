@@ -10,6 +10,8 @@ In the Ghosty-Web project we follow some rules to maintain the project in a simp
 
 - The whole project is built using [**ReactJS**](#). So if you want to add/improve features/codebase of the project then you must know ReactJS
 
+- We prefer & priotirize clean & specific commit messages. So please try to follow commit rules and commit with good commit messages
+
 - Do not try to change the project structure. In case you really need to change it or you have to change/update major parts of the project please first contact [Abir-Tx](#) about this for the approval. 
 
 - In most of the cases you are free to add/improve any thing/parts of the project as long as the changes are usefull
