@@ -37,6 +37,10 @@ Or using **yarn**
 yarn start
 ```
 
+## Contributing
+
+To contribute to this project please read the contributing guidelines from [here](./CONTRIBUTING.md)
+
 ## Contributers
 
 - [Mushfiqur Rahman Abir](https://www.abir-tx.github.io)
