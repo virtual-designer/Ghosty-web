@@ -39,7 +39,7 @@ yarn start
 
 ## Contributing
 
-To contribute to this project please read the contributing guidelines from [here](./CONTRIBUTING.md)
+To contribute to this project please read the contributing guidelines from [here](./CONTRIBUTE.md)
 
 ## Contributers
 
