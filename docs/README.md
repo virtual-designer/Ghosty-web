@@ -16,10 +16,30 @@ The official web development repository for **Ghosty Organization** - A GitHub o
 
 ## Development
 
+### Environment Initialization
 ```shell
 $ git clone https://github.com/GhostyORG/Ghosty-web.git && cd Ghosty-web
-$ yarn or npm install
+$ yarn install
 ```
+Or using npm
+```shell
+npm install
+```
+
+### Development Server
+
+Start the development server 
+```bash
+npm start
+```
+Or using **yarn**
+```bash
+yarn start
+```
+
+## Contributing
+
+To contribute to this project please read the contributing guidelines from [here](./CONTRIBUTE.md)
 
 ## Contributers
 
