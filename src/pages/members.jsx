@@ -34,9 +34,16 @@ export default function Members() {
                     className="card-img-top"
                   />
                   <div className="card-body">
-                    <h5 className="card-title text-center" id="devName">
-                      Dev Name
-                    </h5>
+                    <div className="d-flex justify-content-center align-items-center">
+                      <div>
+                        <h5 className="card-title text-center d-inline-block" id="devName">
+                          Dev Name 
+                        </h5>
+                        <span className="badge text-bg-primary d-inline-block ms-2" id="devRole">
+                          CEO
+                        </span>
+                      </div>
+                    </div>
                     <div className="d-grid gap-2">
                       <NavLink
                         to="#"
@@ -45,6 +52,10 @@ export default function Members() {
                       >
                         GitHub
                       </NavLink>
+
+                      {/* <div className="d-flex justify-content-center align-items-center">
+                        
+                      </div> */}
                     </div>
                   </div>
                 </div>
