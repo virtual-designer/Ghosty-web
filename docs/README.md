@@ -41,7 +41,7 @@ yarn start
 
 To contribute to this project please read the contributing guidelines from [here](./CONTRIBUTE.md)
 
-## Contributers
+## Contributors
 
 - [Mushfiqur Rahman Abir](https://www.abir-tx.github.io)
 - [Killerclaws12](https://github.com/killerclaws12)
