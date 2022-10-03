@@ -48,7 +48,7 @@ const findColor = role => {
 const orgName = "GhostyORG";
 
 // Fetch the data
-export function membersFetch() {
+export function membersFetch() {  
   fetch("https://api.github.com/orgs/" + orgName + "/members")
     .then((res) => res.json())
     .then((data) => {
@@ -62,7 +62,11 @@ export function membersFetch() {
       memAvatar.src = data[0]["avatar_url"];
       devName.textContent = data[0]["login"];
       devLink.href = data[0]["html_url"];
-      devRole.href = findRole(data[0]["login"]);
+
+      const role = findRole(data[0]["login"]);
+      devRole.textContent = role;
+      console.log(0, role, findColor(role));
+      devRole.classList.add(findColor(role));
 
       for (var i = 1; i <= Object.keys(data).length - 1; i++) {
         var newDiv = document.createElement("div");
@@ -96,7 +100,10 @@ export function membersFetch() {
         const newDevRole = document.getElementById("devRole" + i);
         const role = findRole(data[i]["login"]);
         newDevRole.textContent = role;
-        newDevRole.classList.add(findColor(role));
+        const color = findColor(role);
+        console.log(i, role, color);
+        newDevRole.classList.remove(...Object.values(colors));
+        newDevRole.classList.add(color);
       }
     })
     .catch((err) => console.error(err));
