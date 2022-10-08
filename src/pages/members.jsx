@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 // Custom Imports
 import { membersFetch } from "../scripts/js/members";
-import "../styles/css/custom/members.min.css";
+import "../styles/scss/members.scss";
 import config from "../config.json";
 import pagesDesc from "../data/pageDesc.json";
 const TITLE = "Members | " + config.SITE_TITLE;

@@ -2,7 +2,7 @@
 import { BrowserRouter as Router } from "react-router-dom";
 
 // Stylessheets
-import "./styles/css/custom/index.min.css";
+import "./styles/scss/index.scss";
 // import "./styles/css/custom/variables.min.css";
 // BootStrap 5.2
 import "bootstrap/dist/css/bootstrap.min.css";

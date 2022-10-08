@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { motion } from "framer-motion";
 // Custom imports
 import { projectsFetch } from "../scripts/js/projects";
-import "../styles/css/custom/projects.min.css";
+import "../styles/scss/projects.scss";
 import config from "../config.json";
 import pagesDesc from "../data/pageDesc.json";
 
