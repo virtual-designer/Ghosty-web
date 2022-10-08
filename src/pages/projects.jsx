@@ -1,9 +1,10 @@
 // Imports
 import React from "react";
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 // Custom imports
 import { projectsFetch } from "../scripts/js/projects";
-import "../styles/scss/projects.scss";
+import "../styles/css/custom/projects.min.css";
 import config from "../config.json";
 import pagesDesc from "../data/pageDesc.json";
 
@@ -14,7 +15,13 @@ const CANONICAL = config.SITE_DOMAIN + "/;";
 // Projects Component
 export default function Projects() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, x: 0, y: -100 }}
+      animate={{ opacity: 1, x: 0, y: 0 }}
+      exit={{ opacity: 0, x: 0, y: 100 }}
+      transition={{ duration: 0.5 }}
+      layout
+    >
       <Helmet>
         <title>{TITLE}</title>
         <link rel="canonical" href={CANONICAL} />
@@ -30,6 +37,6 @@ export default function Projects() {
       </div>
       {/* Custom JS */}
       {projectsFetch()}
-    </div>
+    </motion.div>
   );
 }

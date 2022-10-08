@@ -2,9 +2,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { motion } from "framer-motion";
 // Custom Imports
 import { membersFetch } from "../scripts/js/members";
-import "../styles/scss/members.scss";
+import "../styles/css/custom/members.min.css";
 import config from "../config.json";
 import pagesDesc from "../data/pageDesc.json";
 const TITLE = "Members | " + config.SITE_TITLE;
@@ -15,7 +16,13 @@ const CANONICAL = config.SITE_DOMAIN + "/;";
 // Members Component
 export default function Members() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, x: 0, y: -100 }}
+      animate={{ opacity: 1, x: 0, y: 0 }}
+      exit={{ opacity: 0, x: 0, y: 100 }}
+      transition={{ duration: 0.5 }}
+      layout
+    >
       <Helmet>
         <title>{TITLE}</title>
         <link rel="canonical" href={CANONICAL} />
@@ -36,10 +43,16 @@ export default function Members() {
                   <div className="card-body">
                     <div className="d-flex justify-content-center align-items-center">
                       <div>
-                        <h5 className="card-title text-center d-inline-block" id="devName">
-                          Dev Name 
+                        <h5
+                          className="card-title text-center d-inline-block"
+                          id="devName"
+                        >
+                          Dev Name
                         </h5>
-                        <span className="badge text-bg-primary d-inline-block ms-2" id="devRole">
+                        <span
+                          className="badge text-bg-primary d-inline-block ms-2"
+                          id="devRole"
+                        >
                           CEO
                         </span>
                       </div>
@@ -67,6 +80,6 @@ export default function Members() {
         {/* Custom JS */}
         {membersFetch()}
       </div>
-    </div>
+    </motion.div>
   );
 }

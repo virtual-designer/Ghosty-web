@@ -8,14 +8,10 @@ $small: 300px;
 $medium: 900px;
 
 // CSS Variables
-
-$halloween_blue: #b37835;
-$default_blue: #0066ff;
-
 :root {
   --black: black;
   --link_color: inherit;
-  --blue: #{$halloween_blue}; // change this line to switch theme colors
+  --blue: #0066ff;
   --light-blue: rgb(204, 199, 244);
   --header: white;
   --footer: white;
@@ -24,16 +20,3 @@ $default_blue: #0066ff;
   --card: rgb(246, 246, 246);
   --card-hover: rgb(223, 223, 223);
 }
-
-// :root {
-//   --black: black;
-//   --link_color: inherit;
-//   --blue: #b37835;
-//   --light-blue: rgb(204, 199, 244);
-//   --header: white;
-//   --footer: white;
-//   --text_color: black;
-//   --shadow: black;
-//   --card: rgb(246, 246, 246);
-//   --card-hover: rgb(223, 223, 223);
-// }

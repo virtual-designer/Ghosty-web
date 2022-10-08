@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/scss/header.scss";
+import "../styles/css/custom/header.min.css";
 import moonIcon from "../images/dark_mode.png";
 import sunIcon from "../images/light_mode.png";
 import { useEffect } from "react";
@@ -47,32 +47,25 @@ export default function Header() {
           </a>
 
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link tab-links"
-                  end="true"
-                  aria-current="page"
-                  to="/">
+            <div className="navbar-nav">
+              <NavLink
+                className="nav-link tab-links"
+                exact
+                aria-current="page"
+                to="/"
+              >
                 Home
               </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link tab-links" to="/projects">
-                  Projects
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link tab-links" to="/members">
-                  Members
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link tab-links" to="/about">
-                  About
-                </NavLink>
-              </li>
-            </ul>
+              <NavLink className="nav-link tab-links" to="/projects">
+                Projects
+              </NavLink>
+              <NavLink className="nav-link tab-links" to="/members">
+                Members
+              </NavLink>
+              <NavLink className="nav-link tab-links" to="/about">
+                About
+              </NavLink>
+            </div>
           </div>
 
           <div className="theme">

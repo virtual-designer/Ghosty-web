@@ -12,6 +12,7 @@ The official web development repository for **Ghosty Organization** - A GitHub o
 - SCSS
 - [OctoKit](https://github.com/octokit/rest.js)
 - [ReactJS](https://reactjs.org/)
+- [Framer Motion](https://www.framer.com/motion/)
 
 ## Development
 
@@ -44,7 +45,7 @@ yarn start
 
 ## Contributing
 
-To contribute to this project please read the contributing guidelines from [here](./CONTRIBUTE.md)
+To contribute to this project please read the contributing guidelines from [here](./CONTRIBUTING.md)
 
 ## Contributors
 
