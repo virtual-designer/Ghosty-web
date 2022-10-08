@@ -36,9 +36,8 @@ At the very basic you can drive our developement by submitting new issues about 
 
 ### Using Email
 
-If you don't have [GitHub](https://github.com) account or you have some problem using [GitHub Issues](https://github.com/features/issues/) you can email us about your idea/issue or directly query/talk to us about the project or your contribution using email.
+If you don't have [GitHub](https://github.com) account or you have some problem using [GitHub Issues](https://github.com/features/issues/) you can email us about your idea/issue or directly query/talk to us about the project or your contribution [using email](ghostydevz@gmail.com).
 
-- To email us use this address - **abirtx@yandex.com**
 
 ### Using PR (**_Pull Requests_**)
 
