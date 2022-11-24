@@ -20,7 +20,7 @@ export default function Footer() {
                   <a href="https://discord.gg/ztDEQjwKbP">
                     <img
                       src={discordLogo}
-                      alt="Discord"
+                      alt="Discord Invite"
                       className="discordLogo"
                     />
                   </a>
