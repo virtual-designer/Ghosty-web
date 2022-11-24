@@ -54,3 +54,4 @@ To contribute to this project please read the contributing guidelines from [here
 - [Jacobkepford](https://github.com/jacobkepford)
 - [TyEggers](https://github.com/TyEggers)
 - [Ar Rakin](https://github.com/virtual-designer)
+- [Hero1230](https://github.com/Hero1230)
