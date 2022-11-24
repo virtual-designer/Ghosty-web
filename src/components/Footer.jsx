@@ -17,7 +17,7 @@ export default function Footer() {
               <h2>Socials</h2>
               <ul>
                 <li>
-                  <a href="https://discord.gg/d4FxAhcVBU">
+                  <a href="https://discord.gg/ztDEQjwKbP">
                     <img
                       src={discordLogo}
                       alt="Discord"
